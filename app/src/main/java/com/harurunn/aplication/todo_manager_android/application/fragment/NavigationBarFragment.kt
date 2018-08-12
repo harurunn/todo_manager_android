@@ -1,4 +1,4 @@
-package fragment
+package com.harurunn.aplication.todo_manager_android.application.fragment
 
 import android.app.Fragment
 import android.os.Bundle
@@ -15,5 +15,6 @@ class NavigationBarFragment:Fragment(){
         //return super.onCreateView(inflater, container, savedInstanceState)
 
         return binding.root
+
     }
 }

@@ -5,7 +5,7 @@
     <data>
         <variable
             name="navigation_bar"
-            type="com.harurunn.aplication.todo_manager_android.application.modele.NavigationBar" />
+            type="com.harurunn.aplication.todo_manager_android.application.model.NavigationBar" />
     </data>
 
     <LinearLayout
