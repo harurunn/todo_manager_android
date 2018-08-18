@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout
-    xmlns:android="http://schemas.android.com/apk/res/android" >
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
 
     <data>
         <variable
@@ -11,7 +12,25 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/colorAccent">
-    </LinearLayout>
+        android:orientation="vertical" >
 
+        <android.support.v7.widget.Toolbar
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/main_stack_page_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:titleTextColor="@color/colorAccent" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/navigation_bar_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/main_stack_page_toolbar" />
+    </LinearLayout>
 </layout>
